@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LEDHelpers"
-  s.version      = "0.1"
+  s.version      = "0.13"
   s.summary      = "Frameworks that helps you to build awasome projects."
   s.description  = <<-DESC
                     With this framework can fastly build MVP projects with all nessesary product code.
