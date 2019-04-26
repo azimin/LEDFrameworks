@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "LEDFrameworks"
+  s.name         = "LEDCore"
   s.version      = "0.1"
   s.summary      = "Frameworks that helps you to build awasome projects."
   s.description  = <<-DESC
@@ -14,16 +14,7 @@ Pod::Spec.new do |s|
     :git => 'https://github.com/azimin/LEDFrameworks.git',
     :tag => s.version.to_s
   }
-  
-  s.subspec 'LEDHelpers' do |helpers|
-    helpers.source_files = 'LEDHelpers/**/*.swift'
-    helpers.swift_version = '5.0'
-  end
-
-  s.subspec 'LEDCore' do |core|
-    core.dependency 'LEDFrameworks/LEDHelpers'
-    core.source_files = 'LEDCore/**/*.swift'
-    core.swift_version = '5.0'
-  end
-
+  s.swift_version = '5.0'
+  s.source_files = 'LEDCore/**/*.swift'
+  s.dependency 'LEDHelpers'
 end
