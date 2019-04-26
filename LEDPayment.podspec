@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "LEDHelpers"
+  s.name         = "LEDPayment"
   s.version      = "0.29"
   s.summary      = "Frameworks that helps you to build awasome projects."
   s.description  = <<-DESC
@@ -15,5 +15,7 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
   s.swift_version = '5.0'
-  s.source_files = 'LEDHelpers/**/*.swift'
+  s.source_files = 'LEDPayment/**/*.swift'
+  s.dependency 'LEDAnalytics'
+  s.dependency 'SwiftyStoreKit'
 end

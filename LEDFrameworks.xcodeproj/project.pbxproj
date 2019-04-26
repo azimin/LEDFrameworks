@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A3CE5CDE60F76D5B128BF65 /* Pods_LEDAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA7324B66A9B1440183EDE7 /* Pods_LEDAnalytics.framework */; };
 		2C0955E47F4F148D757B6F9F /* Pods_LEDProductCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D38126241329A452257290 /* Pods_LEDProductCore.framework */; };
+		4F1E16C12D7C66047725EF58 /* Pods_LEDPayment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B456B6BE25F9A62885B153D /* Pods_LEDPayment.framework */; };
 		764C7857E38A81350EE58188 /* Pods_LEDHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A510242C78D3635D914B23F4 /* Pods_LEDHelpers.framework */; };
 		9F8948572272E1FC0092EF71 /* LEDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8948552272E1FC0092EF71 /* LEDHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F8948712272E2600092EF71 /* LEDCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F89486F2272E2600092EF71 /* LEDCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,6 +37,17 @@
 		9F894924227360AB0092EF71 /* AnalyticsAdditionalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894920227360AA0092EF71 /* AnalyticsAdditionalService.swift */; };
 		9F894925227360AB0092EF71 /* AnalyticsApplicationEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894921227360AB0092EF71 /* AnalyticsApplicationEventsHandler.swift */; };
 		9F894926227360AB0092EF71 /* AnalyticsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894922227360AB0092EF71 /* AnalyticsServiceProtocol.swift */; };
+		9F89493422736BC10092EF71 /* LEDPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F89493222736BC10092EF71 /* LEDPayment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F89493D22736C460092EF71 /* SubscriptionsDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89493922736C460092EF71 /* SubscriptionsDataSourceProtocol.swift */; };
+		9F89493E22736C460092EF71 /* ProductProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89493A22736C460092EF71 /* ProductProtocol.swift */; };
+		9F89493F22736C460092EF71 /* PurchasesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89493B22736C460092EF71 /* PurchasesService.swift */; };
+		9F89494022736C460092EF71 /* PurchaseHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89493C22736C460092EF71 /* PurchaseHandlerProtocol.swift */; };
+		9F89494522736EAA0092EF71 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89494422736EAA0092EF71 /* Blocks.swift */; };
+		9F89494722736EB80092EF71 /* PurchaseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89494622736EB80092EF71 /* PurchaseStatus.swift */; };
+		9F89494A22736EDB0092EF71 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89494922736EDB0092EF71 /* Collection+Extensions.swift */; };
+		9F89494C22736EF00092EF71 /* Color+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89494B22736EF00092EF71 /* Color+HEX.swift */; };
+		9F89494E22736F070092EF71 /* CALayer+SketchShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89494D22736F070092EF71 /* CALayer+SketchShadow.swift */; };
+		9F89495022736F1C0092EF71 /* String+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89494F22736F1C0092EF71 /* String+Range.swift */; };
 		E383DC7C97D4C62A4F6BE3DB /* Pods_LEDCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086C8F95CA08CD05C1DA1C1D /* Pods_LEDCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +73,13 @@
 			remoteGlobalIDString = 9F8948932272E7F30092EF71;
 			remoteInfo = LEDProductCore;
 		};
+		9F89494122736DCE0092EF71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F8948492272E1FC0092EF71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F8948F9227357020092EF71;
+			remoteInfo = LEDAnalytics;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +88,9 @@
 		20E48B638987CB89B52D15F0 /* Pods-LEDHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDHelpers.release.xcconfig"; path = "Target Support Files/Pods-LEDHelpers/Pods-LEDHelpers.release.xcconfig"; sourceTree = "<group>"; };
 		2F5DD25763A7E30C92DC2BE0 /* Pods-LEDProductCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDProductCore.release.xcconfig"; path = "Target Support Files/Pods-LEDProductCore/Pods-LEDProductCore.release.xcconfig"; sourceTree = "<group>"; };
 		3CB715580F28583FA84EBC64 /* Pods-LEDCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDCore.debug.xcconfig"; path = "Target Support Files/Pods-LEDCore/Pods-LEDCore.debug.xcconfig"; sourceTree = "<group>"; };
+		48FE44C72B2134BA9A04F6C5 /* Pods-LEDPayment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDPayment.debug.xcconfig"; path = "Target Support Files/Pods-LEDPayment/Pods-LEDPayment.debug.xcconfig"; sourceTree = "<group>"; };
 		896A2AD69C07B268DC368D07 /* Pods-LEDAnalyticsCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDAnalyticsCore.debug.xcconfig"; path = "Target Support Files/Pods-LEDAnalyticsCore/Pods-LEDAnalyticsCore.debug.xcconfig"; sourceTree = "<group>"; };
+		9B456B6BE25F9A62885B153D /* Pods_LEDPayment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LEDPayment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5E85848EAF5CFF56ACD2BB /* Pods-LEDProductCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDProductCore.debug.xcconfig"; path = "Target Support Files/Pods-LEDProductCore/Pods-LEDProductCore.debug.xcconfig"; sourceTree = "<group>"; };
 		9F8948522272E1FC0092EF71 /* LEDHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEDHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8948552272E1FC0092EF71 /* LEDHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEDHelpers.h; sourceTree = "<group>"; };
@@ -105,11 +126,25 @@
 		9F894920227360AA0092EF71 /* AnalyticsAdditionalService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsAdditionalService.swift; sourceTree = "<group>"; };
 		9F894921227360AB0092EF71 /* AnalyticsApplicationEventsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsApplicationEventsHandler.swift; sourceTree = "<group>"; };
 		9F894922227360AB0092EF71 /* AnalyticsServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsServiceProtocol.swift; sourceTree = "<group>"; };
+		9F89493022736BC10092EF71 /* LEDPayment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEDPayment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F89493222736BC10092EF71 /* LEDPayment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEDPayment.h; sourceTree = "<group>"; };
+		9F89493322736BC10092EF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F89493922736C460092EF71 /* SubscriptionsDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsDataSourceProtocol.swift; sourceTree = "<group>"; };
+		9F89493A22736C460092EF71 /* ProductProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductProtocol.swift; sourceTree = "<group>"; };
+		9F89493B22736C460092EF71 /* PurchasesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasesService.swift; sourceTree = "<group>"; };
+		9F89493C22736C460092EF71 /* PurchaseHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseHandlerProtocol.swift; sourceTree = "<group>"; };
+		9F89494422736EAA0092EF71 /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
+		9F89494622736EB80092EF71 /* PurchaseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseStatus.swift; sourceTree = "<group>"; };
+		9F89494922736EDB0092EF71 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		9F89494B22736EF00092EF71 /* Color+HEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+HEX.swift"; sourceTree = "<group>"; };
+		9F89494D22736F070092EF71 /* CALayer+SketchShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+SketchShadow.swift"; sourceTree = "<group>"; };
+		9F89494F22736F1C0092EF71 /* String+Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Range.swift"; sourceTree = "<group>"; };
 		A343C77C09333B4D21041866 /* Pods-LEDAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDAnalytics.release.xcconfig"; path = "Target Support Files/Pods-LEDAnalytics/Pods-LEDAnalytics.release.xcconfig"; sourceTree = "<group>"; };
 		A510242C78D3635D914B23F4 /* Pods_LEDHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LEDHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30FDEF3777817310E479B0E /* Pods-LEDAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDAnalytics.debug.xcconfig"; path = "Target Support Files/Pods-LEDAnalytics/Pods-LEDAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
 		CEA948527E9ECAAB46A80335 /* Pods_LEDAnalyticsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LEDAnalyticsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D38126241329A452257290 /* Pods_LEDProductCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LEDProductCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6A79D3EC555AD2BF2EC62B /* Pods-LEDPayment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDPayment.release.xcconfig"; path = "Target Support Files/Pods-LEDPayment/Pods-LEDPayment.release.xcconfig"; sourceTree = "<group>"; };
 		F92D0B7E0D4F3346EDEDEEE0 /* Pods-LEDCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDCore.release.xcconfig"; path = "Target Support Files/Pods-LEDCore/Pods-LEDCore.release.xcconfig"; sourceTree = "<group>"; };
 		FC9B9C76BB153AFEEF00EFE3 /* Pods-LEDAnalyticsCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDAnalyticsCore.release.xcconfig"; path = "Target Support Files/Pods-LEDAnalyticsCore/Pods-LEDAnalyticsCore.release.xcconfig"; sourceTree = "<group>"; };
 		FCA7324B66A9B1440183EDE7 /* Pods_LEDAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LEDAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +183,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F89492D22736BC10092EF71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1E16C12D7C66047725EF58 /* Pods_LEDPayment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -158,6 +201,7 @@
 				9F89486E2272E2600092EF71 /* LEDCore */,
 				9F8948952272E7F30092EF71 /* LEDProductCore */,
 				9F8948FB227357020092EF71 /* LEDAnalytics */,
+				9F89493122736BC10092EF71 /* LEDPayment */,
 				9F8948532272E1FC0092EF71 /* Products */,
 				A7F6CC40D4340C1DF3707A6C /* Pods */,
 				A6A762D7B17F8865AC04C2D0 /* Frameworks */,
@@ -171,6 +215,7 @@
 				9F89486D2272E2600092EF71 /* LEDCore.framework */,
 				9F8948942272E7F30092EF71 /* LEDProductCore.framework */,
 				9F8948FA227357020092EF71 /* LEDAnalytics.framework */,
+				9F89493022736BC10092EF71 /* LEDPayment.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +223,8 @@
 		9F8948542272E1FC0092EF71 /* LEDHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				9F89494822736ECF0092EF71 /* Extensions */,
+				9F89494322736EA40092EF71 /* Types */,
 				9F89488A2272E3210092EF71 /* Classes */,
 				9F8948552272E1FC0092EF71 /* LEDHelpers.h */,
 				9F8948562272E1FC0092EF71 /* Info.plist */,
@@ -247,6 +294,7 @@
 			children = (
 				9F89488D2272E3470092EF71 /* Reachability.swift */,
 				9F89488B2272E3300092EF71 /* Observer.swift */,
+				9F89494622736EB80092EF71 /* PurchaseStatus.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -329,6 +377,46 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		9F89493122736BC10092EF71 /* LEDPayment */ = {
+			isa = PBXGroup;
+			children = (
+				9F89493822736C2F0092EF71 /* Classes */,
+				9F89493222736BC10092EF71 /* LEDPayment.h */,
+				9F89493322736BC10092EF71 /* Info.plist */,
+			);
+			path = LEDPayment;
+			sourceTree = "<group>";
+		};
+		9F89493822736C2F0092EF71 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9F89493B22736C460092EF71 /* PurchasesService.swift */,
+				9F89493C22736C460092EF71 /* PurchaseHandlerProtocol.swift */,
+				9F89493922736C460092EF71 /* SubscriptionsDataSourceProtocol.swift */,
+				9F89493A22736C460092EF71 /* ProductProtocol.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9F89494322736EA40092EF71 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				9F89494422736EAA0092EF71 /* Blocks.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		9F89494822736ECF0092EF71 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F89494922736EDB0092EF71 /* Collection+Extensions.swift */,
+				9F89494B22736EF00092EF71 /* Color+HEX.swift */,
+				9F89494D22736F070092EF71 /* CALayer+SketchShadow.swift */,
+				9F89494F22736F1C0092EF71 /* String+Range.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A6A762D7B17F8865AC04C2D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +425,7 @@
 				D1D38126241329A452257290 /* Pods_LEDProductCore.framework */,
 				CEA948527E9ECAAB46A80335 /* Pods_LEDAnalyticsCore.framework */,
 				FCA7324B66A9B1440183EDE7 /* Pods_LEDAnalytics.framework */,
+				9B456B6BE25F9A62885B153D /* Pods_LEDPayment.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -354,6 +443,8 @@
 				FC9B9C76BB153AFEEF00EFE3 /* Pods-LEDAnalyticsCore.release.xcconfig */,
 				B30FDEF3777817310E479B0E /* Pods-LEDAnalytics.debug.xcconfig */,
 				A343C77C09333B4D21041866 /* Pods-LEDAnalytics.release.xcconfig */,
+				48FE44C72B2134BA9A04F6C5 /* Pods-LEDPayment.debug.xcconfig */,
+				EC6A79D3EC555AD2BF2EC62B /* Pods-LEDPayment.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -390,6 +481,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8948FE227357020092EF71 /* LEDAnalytics.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F89492B22736BC10092EF71 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F89493422736BC10092EF71 /* LEDPayment.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +574,26 @@
 			productReference = 9F8948FA227357020092EF71 /* LEDAnalytics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		9F89492F22736BC10092EF71 /* LEDPayment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F89493722736BC10092EF71 /* Build configuration list for PBXNativeTarget "LEDPayment" */;
+			buildPhases = (
+				1FA4583D828ACD7E5D9F13C7 /* [CP] Check Pods Manifest.lock */,
+				9F89492B22736BC10092EF71 /* Headers */,
+				9F89492C22736BC10092EF71 /* Sources */,
+				9F89492D22736BC10092EF71 /* Frameworks */,
+				9F89492E22736BC10092EF71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F89494222736DCE0092EF71 /* PBXTargetDependency */,
+			);
+			name = LEDPayment;
+			productName = LEDPayment;
+			productReference = 9F89493022736BC10092EF71 /* LEDPayment.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -500,6 +619,9 @@
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
 					};
+					9F89492F22736BC10092EF71 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 9F89484C2272E1FC0092EF71 /* Build configuration list for PBXProject "LEDFrameworks" */;
@@ -518,6 +640,7 @@
 				9F89486C2272E2600092EF71 /* LEDCore */,
 				9F8948932272E7F30092EF71 /* LEDProductCore */,
 				9F8948F9227357020092EF71 /* LEDAnalytics */,
+				9F89492F22736BC10092EF71 /* LEDPayment */,
 			);
 		};
 /* End PBXProject section */
@@ -551,6 +674,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F89492E22736BC10092EF71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -570,6 +700,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LEDAnalytics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FA4583D828ACD7E5D9F13C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LEDPayment-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -649,8 +801,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F89494522736EAA0092EF71 /* Blocks.swift in Sources */,
 				9F89488E2272E3470092EF71 /* Reachability.swift in Sources */,
+				9F89494E22736F070092EF71 /* CALayer+SketchShadow.swift in Sources */,
+				9F89494722736EB80092EF71 /* PurchaseStatus.swift in Sources */,
+				9F89495022736F1C0092EF71 /* String+Range.swift in Sources */,
+				9F89494C22736EF00092EF71 /* Color+HEX.swift in Sources */,
 				9F89488C2272E3300092EF71 /* Observer.swift in Sources */,
+				9F89494A22736EDB0092EF71 /* Collection+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +853,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F89492C22736BC10092EF71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F89493F22736C460092EF71 /* PurchasesService.swift in Sources */,
+				9F89493D22736C460092EF71 /* SubscriptionsDataSourceProtocol.swift in Sources */,
+				9F89493E22736C460092EF71 /* ProductProtocol.swift in Sources */,
+				9F89494022736C460092EF71 /* PurchaseHandlerProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -712,6 +881,11 @@
 			isa = PBXTargetDependency;
 			target = 9F8948932272E7F30092EF71 /* LEDProductCore */;
 			targetProxy = 9F8949022273570A0092EF71 /* PBXContainerItemProxy */;
+		};
+		9F89494222736DCE0092EF71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F8948F9227357020092EF71 /* LEDAnalytics */;
+			targetProxy = 9F89494122736DCE0092EF71 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1063,6 +1237,58 @@
 			};
 			name = Release;
 		};
+		9F89493522736BC10092EF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48FE44C72B2134BA9A04F6C5 /* Pods-LEDPayment.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5MGEMLZRS4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LEDPayment/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.led.frameworks.LEDPayment;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F89493622736BC10092EF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC6A79D3EC555AD2BF2EC62B /* Pods-LEDPayment.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5MGEMLZRS4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LEDPayment/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.led.frameworks.LEDPayment;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1107,6 +1333,15 @@
 			buildConfigurations = (
 				9F894900227357020092EF71 /* Debug */,
 				9F894901227357020092EF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F89493722736BC10092EF71 /* Build configuration list for PBXNativeTarget "LEDPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F89493522736BC10092EF71 /* Debug */,
+				9F89493622736BC10092EF71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

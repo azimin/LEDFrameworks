@@ -12,11 +12,13 @@ PODS:
   - FBSDKCoreKit (4.44.1):
     - Bolts (~> 1.9)
   - SimpleKeychain (0.9.0)
+  - SwiftyStoreKit (0.14.2)
 
 DEPENDENCIES:
   - Amplitude-iOS
   - FacebookCore
   - SimpleKeychain
+  - SwiftyStoreKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -25,6 +27,7 @@ SPEC REPOS:
     - FacebookCore
     - FBSDKCoreKit
     - SimpleKeychain
+    - SwiftyStoreKit
 
 SPEC CHECKSUMS:
   Amplitude-iOS: ac1715ae68104b7a51723209ad574f60ab22ae5f
@@ -32,7 +35,8 @@ SPEC CHECKSUMS:
   FacebookCore: 38cd3a4078738d6f648eb9b6b9d35b02d693e9a1
   FBSDKCoreKit: a823ae35bdb60ebb8d7a7e51abe7c5d87d2bfced
   SimpleKeychain: 3be49072fd2d82de8fa83d847ef1e548622f8fc5
+  SwiftyStoreKit: cc399645796b094022fb650c148a0aed25995873
 
-PODFILE CHECKSUM: 05b25d220b342e61305b4accf8bc95a5b6911d86
+PODFILE CHECKSUM: 99e84e3f8bb00c5b90110ec232286e51849a875b
 
 COCOAPODS: 1.6.1
