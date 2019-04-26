@@ -1,16 +1,38 @@
 PODS:
+  - Amplitude-iOS (4.6.0)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FacebookCore (0.6.0):
+    - Bolts (~> 1.9)
+    - FBSDKCoreKit (~> 4.43)
+  - FBSDKCoreKit (4.44.1):
+    - Bolts (~> 1.9)
   - SimpleKeychain (0.9.0)
 
 DEPENDENCIES:
+  - Amplitude-iOS
+  - FacebookCore
   - SimpleKeychain
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Amplitude-iOS
+    - Bolts
+    - FacebookCore
+    - FBSDKCoreKit
     - SimpleKeychain
 
 SPEC CHECKSUMS:
+  Amplitude-iOS: ac1715ae68104b7a51723209ad574f60ab22ae5f
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FacebookCore: 38cd3a4078738d6f648eb9b6b9d35b02d693e9a1
+  FBSDKCoreKit: a823ae35bdb60ebb8d7a7e51abe7c5d87d2bfced
   SimpleKeychain: 3be49072fd2d82de8fa83d847ef1e548622f8fc5
 
-PODFILE CHECKSUM: 745859e2c33dc82d9c0c765ee49a83252ddaabc5
+PODFILE CHECKSUM: 901187a3179cf251cb42d6523526e5ea957136b4
 
 COCOAPODS: 1.6.1

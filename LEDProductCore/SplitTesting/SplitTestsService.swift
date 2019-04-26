@@ -11,10 +11,10 @@ import UIKit
 import LEDCore
 
 public class SplitTestingService {
-    private let analyticsService: AnalyticsServiceProtocol
+    private let analyticsService: ProductAnalyticsServiceProtocol
     private let storage: StorageServiceProtocol
 
-    public init(analyticsService: AnalyticsServiceProtocol, storage: StorageServiceProtocol) {
+    public init(analyticsService: ProductAnalyticsServiceProtocol, storage: StorageServiceProtocol) {
         self.analyticsService = analyticsService
         self.storage = storage
     }

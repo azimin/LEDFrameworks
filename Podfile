@@ -1,11 +1,20 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+inhibit_all_warnings!
+
 target 'LEDCore' do
   use_frameworks!
   pod 'SimpleKeychain'
 
   # Pods for LEDCore
+
+end
+
+target 'LEDAnalyticsCore' do
+  use_frameworks!
+  pod 'FacebookCore'
+  pod 'Amplitude-iOS'
 
 end
 

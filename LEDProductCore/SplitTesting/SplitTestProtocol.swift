@@ -14,15 +14,15 @@ public protocol SplitTestProtocol {
 
   var currentGroup: GroupType { get }
 
-  var analytics: AnalyticsServiceProtocol { get }
-  init(currentGroup: GroupType, analytics: AnalyticsServiceProtocol)
+  var analytics: ProductAnalyticsServiceProtocol { get }
+  init(currentGroup: GroupType, analytics: ProductAnalyticsServiceProtocol)
 
   func hitSplitTest()
 }
 
 extension SplitTestProtocol {
   public func hitSplitTest() {
-    analytics.setOnce(name: Self.analyticsKey, value: self.currentGroup.rawValue as NSObject)
+    analytics.setPersonPropertyOnce(name: Self.analyticsKey, value: self.currentGroup.rawValue as NSObject)
   }
 
   static var analyticsKey: String {

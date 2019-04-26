@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol AnalyticsServiceProtocol {
-    func setOnce(name: String, value: NSObject)
+public protocol ProductAnalyticsServiceProtocol {
+    func setPersonPropertyOnce(name: String, value: NSObject)
 }
