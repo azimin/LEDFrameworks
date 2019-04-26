@@ -15,8 +15,6 @@ import LEDProductCore
 import StoreKit
 import AdSupport
 
-let value: ProductAnalyticsServiceProtocol?
-
 public class AnalyticsService: AnalyticsServiceProtocol, ProductAnalyticsServiceProtocol {
     private var storage: StorageServiceProtocol
     private var apmplitudeId: String?
