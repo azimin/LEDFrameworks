@@ -18,6 +18,13 @@ target 'LEDAnalyticsCore' do
 
 end
 
+target 'LEDAnalytics' do
+  use_frameworks!
+  pod 'FacebookCore'
+  pod 'Amplitude-iOS'
+
+end
+
 target 'LEDHelpers' do
   use_frameworks!
 

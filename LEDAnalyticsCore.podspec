@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LEDAnalyticsCore"
-  s.version      = "0.13"
+  s.version      = "0.14"
   s.summary      = "Frameworks that helps you to build awasome projects."
   s.description  = <<-DESC
                     With this framework can fastly build MVP projects with all nessesary product code.
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
   s.swift_version = '5.0'
-  s.source_files = 'LEDCore/**/*.swift'
+  s.source_files = 'LEDAnalyticsCore/**/*.swift'
 
   s.dependency 'LEDCore'
   s.dependency 'FacebookCore'
