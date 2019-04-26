@@ -15,7 +15,8 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
   s.swift_version = '5.0'
-  s.source_files = 'LEDAnalyticsCore/**/*.swift'
+  s.source_files = 'LEDAnalyticsCore/Classes/*.swift'
+
   s.dependency 'LEDProductCore'
   s.dependency 'FacebookCore'
   s.dependency 'Amplitude-iOS'
