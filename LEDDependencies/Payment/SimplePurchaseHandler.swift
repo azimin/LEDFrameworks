@@ -10,6 +10,8 @@ import Foundation
 import LEDPayment
 
 public class SimplePurchaseHandler<PurchaseProduct: ProductProtocol>: PurchaseHandlerProtocol {
+    public init() { }
+
     public typealias Product = PurchaseProduct
 
     public func newPurchaseHandled(type: PurchaseType, product: Product) {

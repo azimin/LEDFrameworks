@@ -16,12 +16,12 @@ import LEDCore
 public class PurchasesService<Product, PurchaseHandler: PurchaseHandlerProtocol> where PurchaseHandler.Product == Product {
     
     private var products: [Product: SKProduct] = [:]
-    private let analytics: AnalyticsService
+    private let analytics: AnalyticsServiceProtocol
     private let sharedSecret: String
     private let subscriptionsDataSource: SubscriptionsDataSourceProtocol
     private let purchaseHandler: PurchaseHandler
 
-    public init(analytics: AnalyticsService,    
+    public init(analytics: AnalyticsServiceProtocol,
                 subscriptionsDataSource: SubscriptionsDataSourceProtocol,
                 purchaseHandler: PurchaseHandler,
                 sharedSecret: String) {

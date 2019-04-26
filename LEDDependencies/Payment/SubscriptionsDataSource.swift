@@ -18,7 +18,7 @@ public class SubscriptionsDataSource<Product, PurchaseHandler: PurchaseHandlerPr
     private let userMonitor: UserMonitorService
     private var purchasesService: PurchasesService<Product, PurchaseHandler>?
 
-    public init(analyticsService: AnalyticsService,
+    public init(analyticsService: AnalyticsServiceProtocol,
                 userMonitor: UserMonitorService) {
         self.analyticsService = analyticsService
         self.userMonitor = userMonitor
