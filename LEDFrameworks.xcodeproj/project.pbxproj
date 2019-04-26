@@ -32,11 +32,6 @@
 		9F8948B22272E8550092EF71 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948B02272E8550092EF71 /* UserDefaults+Storage.swift */; };
 		9F8948DC227311810092EF71 /* SimpleKeychain+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948DB227311810092EF71 /* SimpleKeychain+Storage.swift */; };
 		9F8948FE227357020092EF71 /* LEDAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8948FC227357020092EF71 /* LEDAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F89491722735DD60092EF71 /* LEDStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F89491522735DD60092EF71 /* LEDStatistics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F89491B22735DDE0092EF71 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8949052273572E0092EF71 /* AnalyticsService.swift */; };
-		9F89491C22735DE30092EF71 /* AnalyticsAdditionalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894908227357450092EF71 /* AnalyticsAdditionalService.swift */; };
-		9F89491D22735DE30092EF71 /* AnalyticsApplicationEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894907227357450092EF71 /* AnalyticsApplicationEventsHandler.swift */; };
-		9F89491E22735DE30092EF71 /* AnalyticsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894909227357450092EF71 /* AnalyticsServiceProtocol.swift */; };
 		9F894923227360AB0092EF71 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89491F227360AA0092EF71 /* AnalyticsService.swift */; };
 		9F894924227360AB0092EF71 /* AnalyticsAdditionalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894920227360AA0092EF71 /* AnalyticsAdditionalService.swift */; };
 		9F894925227360AB0092EF71 /* AnalyticsApplicationEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894921227360AB0092EF71 /* AnalyticsApplicationEventsHandler.swift */; };
@@ -106,13 +101,6 @@
 		9F8948FA227357020092EF71 /* LEDAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEDAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8948FC227357020092EF71 /* LEDAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEDAnalytics.h; sourceTree = "<group>"; };
 		9F8948FD227357020092EF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F8949052273572E0092EF71 /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
-		9F894907227357450092EF71 /* AnalyticsApplicationEventsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsApplicationEventsHandler.swift; sourceTree = "<group>"; };
-		9F894908227357450092EF71 /* AnalyticsAdditionalService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsAdditionalService.swift; sourceTree = "<group>"; };
-		9F894909227357450092EF71 /* AnalyticsServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsServiceProtocol.swift; sourceTree = "<group>"; };
-		9F89491322735DD60092EF71 /* LEDStatistics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEDStatistics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F89491522735DD60092EF71 /* LEDStatistics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEDStatistics.h; sourceTree = "<group>"; };
-		9F89491622735DD60092EF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F89491F227360AA0092EF71 /* AnalyticsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
 		9F894920227360AA0092EF71 /* AnalyticsAdditionalService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsAdditionalService.swift; sourceTree = "<group>"; };
 		9F894921227360AB0092EF71 /* AnalyticsApplicationEventsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsApplicationEventsHandler.swift; sourceTree = "<group>"; };
@@ -160,13 +148,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F89491022735DD60092EF71 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -177,7 +158,6 @@
 				9F89486E2272E2600092EF71 /* LEDCore */,
 				9F8948952272E7F30092EF71 /* LEDProductCore */,
 				9F8948FB227357020092EF71 /* LEDAnalytics */,
-				9F89491422735DD60092EF71 /* LEDStatistics */,
 				9F8948532272E1FC0092EF71 /* Products */,
 				A7F6CC40D4340C1DF3707A6C /* Pods */,
 				A6A762D7B17F8865AC04C2D0 /* Frameworks */,
@@ -191,7 +171,6 @@
 				9F89486D2272E2600092EF71 /* LEDCore.framework */,
 				9F8948942272E7F30092EF71 /* LEDProductCore.framework */,
 				9F8948FA227357020092EF71 /* LEDAnalytics.framework */,
-				9F89491322735DD60092EF71 /* LEDStatistics.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,19 +329,6 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		9F89491422735DD60092EF71 /* LEDStatistics */ = {
-			isa = PBXGroup;
-			children = (
-				9F8949052273572E0092EF71 /* AnalyticsService.swift */,
-				9F894908227357450092EF71 /* AnalyticsAdditionalService.swift */,
-				9F894907227357450092EF71 /* AnalyticsApplicationEventsHandler.swift */,
-				9F894909227357450092EF71 /* AnalyticsServiceProtocol.swift */,
-				9F89491522735DD60092EF71 /* LEDStatistics.h */,
-				9F89491622735DD60092EF71 /* Info.plist */,
-			);
-			path = LEDStatistics;
-			sourceTree = "<group>";
-		};
 		A6A762D7B17F8865AC04C2D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,14 +390,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8948FE227357020092EF71 /* LEDAnalytics.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F89490E22735DD60092EF71 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F89491722735DD60092EF71 /* LEDStatistics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,24 +475,6 @@
 			productReference = 9F8948FA227357020092EF71 /* LEDAnalytics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9F89491222735DD60092EF71 /* LEDStatistics */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9F89491822735DD60092EF71 /* Build configuration list for PBXNativeTarget "LEDStatistics" */;
-			buildPhases = (
-				9F89490E22735DD60092EF71 /* Headers */,
-				9F89490F22735DD60092EF71 /* Sources */,
-				9F89491022735DD60092EF71 /* Frameworks */,
-				9F89491122735DD60092EF71 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LEDStatistics;
-			productName = LEDStatistics;
-			productReference = 9F89491322735DD60092EF71 /* LEDStatistics.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -560,9 +500,6 @@
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
 					};
-					9F89491222735DD60092EF71 = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
 				};
 			};
 			buildConfigurationList = 9F89484C2272E1FC0092EF71 /* Build configuration list for PBXProject "LEDFrameworks" */;
@@ -581,7 +518,6 @@
 				9F89486C2272E2600092EF71 /* LEDCore */,
 				9F8948932272E7F30092EF71 /* LEDProductCore */,
 				9F8948F9227357020092EF71 /* LEDAnalytics */,
-				9F89491222735DD60092EF71 /* LEDStatistics */,
 			);
 		};
 /* End PBXProject section */
@@ -609,13 +545,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9F8948F8227357020092EF71 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F89491122735DD60092EF71 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -763,17 +692,6 @@
 				9F894924227360AB0092EF71 /* AnalyticsAdditionalService.swift in Sources */,
 				9F894923227360AB0092EF71 /* AnalyticsService.swift in Sources */,
 				9F894925227360AB0092EF71 /* AnalyticsApplicationEventsHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F89490F22735DD60092EF71 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F89491E22735DE30092EF71 /* AnalyticsServiceProtocol.swift in Sources */,
-				9F89491C22735DE30092EF71 /* AnalyticsAdditionalService.swift in Sources */,
-				9F89491B22735DDE0092EF71 /* AnalyticsService.swift in Sources */,
-				9F89491D22735DE30092EF71 /* AnalyticsApplicationEventsHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1145,56 +1063,6 @@
 			};
 			name = Release;
 		};
-		9F89491922735DD60092EF71 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5MGEMLZRS4;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LEDStatistics/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.led.frameworks.LEDStatistics;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9F89491A22735DD60092EF71 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5MGEMLZRS4;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LEDStatistics/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.led.frameworks.LEDStatistics;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1239,15 +1107,6 @@
 			buildConfigurations = (
 				9F894900227357020092EF71 /* Debug */,
 				9F894901227357020092EF71 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9F89491822735DD60092EF71 /* Build configuration list for PBXNativeTarget "LEDStatistics" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9F89491922735DD60092EF71 /* Debug */,
-				9F89491A22735DD60092EF71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

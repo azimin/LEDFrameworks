@@ -15,6 +15,8 @@ import LEDProductCore
 import StoreKit
 import AdSupport
 
+public extension AnalyticsService: ProductAnalyticsServiceProtocol { }
+
 public class AnalyticsService: AnalyticsServiceProtocol {
     private var storage: StorageServiceProtocol
     private var apmplitudeId: String?
