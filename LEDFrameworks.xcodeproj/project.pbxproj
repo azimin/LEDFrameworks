@@ -37,6 +37,10 @@
 		9F89491C22735DE30092EF71 /* AnalyticsAdditionalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894908227357450092EF71 /* AnalyticsAdditionalService.swift */; };
 		9F89491D22735DE30092EF71 /* AnalyticsApplicationEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894907227357450092EF71 /* AnalyticsApplicationEventsHandler.swift */; };
 		9F89491E22735DE30092EF71 /* AnalyticsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894909227357450092EF71 /* AnalyticsServiceProtocol.swift */; };
+		9F894923227360AB0092EF71 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89491F227360AA0092EF71 /* AnalyticsService.swift */; };
+		9F894924227360AB0092EF71 /* AnalyticsAdditionalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894920227360AA0092EF71 /* AnalyticsAdditionalService.swift */; };
+		9F894925227360AB0092EF71 /* AnalyticsApplicationEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894921227360AB0092EF71 /* AnalyticsApplicationEventsHandler.swift */; };
+		9F894926227360AB0092EF71 /* AnalyticsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894922227360AB0092EF71 /* AnalyticsServiceProtocol.swift */; };
 		E383DC7C97D4C62A4F6BE3DB /* Pods_LEDCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086C8F95CA08CD05C1DA1C1D /* Pods_LEDCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +113,10 @@
 		9F89491322735DD60092EF71 /* LEDStatistics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEDStatistics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F89491522735DD60092EF71 /* LEDStatistics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEDStatistics.h; sourceTree = "<group>"; };
 		9F89491622735DD60092EF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F89491F227360AA0092EF71 /* AnalyticsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		9F894920227360AA0092EF71 /* AnalyticsAdditionalService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsAdditionalService.swift; sourceTree = "<group>"; };
+		9F894921227360AB0092EF71 /* AnalyticsApplicationEventsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsApplicationEventsHandler.swift; sourceTree = "<group>"; };
+		9F894922227360AB0092EF71 /* AnalyticsServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsServiceProtocol.swift; sourceTree = "<group>"; };
 		A343C77C09333B4D21041866 /* Pods-LEDAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDAnalytics.release.xcconfig"; path = "Target Support Files/Pods-LEDAnalytics/Pods-LEDAnalytics.release.xcconfig"; sourceTree = "<group>"; };
 		A510242C78D3635D914B23F4 /* Pods_LEDHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LEDHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30FDEF3777817310E479B0E /* Pods-LEDAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDAnalytics.debug.xcconfig"; path = "Target Support Files/Pods-LEDAnalytics/Pods-LEDAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
@@ -334,6 +342,10 @@
 		9F8949042273570F0092EF71 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9F894920227360AA0092EF71 /* AnalyticsAdditionalService.swift */,
+				9F894921227360AB0092EF71 /* AnalyticsApplicationEventsHandler.swift */,
+				9F89491F227360AA0092EF71 /* AnalyticsService.swift */,
+				9F894922227360AB0092EF71 /* AnalyticsServiceProtocol.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -747,6 +759,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F894926227360AB0092EF71 /* AnalyticsServiceProtocol.swift in Sources */,
+				9F894924227360AB0092EF71 /* AnalyticsAdditionalService.swift in Sources */,
+				9F894923227360AB0092EF71 /* AnalyticsService.swift in Sources */,
+				9F894925227360AB0092EF71 /* AnalyticsApplicationEventsHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
