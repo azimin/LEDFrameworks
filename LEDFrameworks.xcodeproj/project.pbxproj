@@ -308,14 +308,14 @@
 		9F8948E3227315670092EF71 /* LEDAnalyticsCore */ = {
 			isa = PBXGroup;
 			children = (
-				9F8948F22273169C0092EF71 /* Classes */,
+				9F8948F22273169C0092EF71 /* Analytics */,
 				9F8948E4227315670092EF71 /* LEDAnalyticsCore.h */,
 				9F8948E5227315670092EF71 /* Info.plist */,
 			);
 			path = LEDAnalyticsCore;
 			sourceTree = "<group>";
 		};
-		9F8948F22273169C0092EF71 /* Classes */ = {
+		9F8948F22273169C0092EF71 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
 				9F8948EC227315700092EF71 /* AnalyticsService.swift */,
@@ -323,7 +323,7 @@
 				9F8948EA227315700092EF71 /* AnalyticsAdditionalService.swift */,
 				9F8948EB227315700092EF71 /* AnalyticsApplicationEventsHandler.swift */,
 			);
-			path = Classes;
+			path = Analytics;
 			sourceTree = "<group>";
 		};
 		A6A762D7B17F8865AC04C2D0 /* Frameworks */ = {
