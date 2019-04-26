@@ -31,17 +31,11 @@
 		9F8948B12272E8550092EF71 /* StorageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948AF2272E8540092EF71 /* StorageServiceProtocol.swift */; };
 		9F8948B22272E8550092EF71 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948B02272E8550092EF71 /* UserDefaults+Storage.swift */; };
 		9F8948DC227311810092EF71 /* SimpleKeychain+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948DB227311810092EF71 /* SimpleKeychain+Storage.swift */; };
-		9F8948E6227315670092EF71 /* LEDAnalyticsCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8948E4227315670092EF71 /* LEDAnalyticsCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F8948ED227315700092EF71 /* AnalyticsAdditionalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948EA227315700092EF71 /* AnalyticsAdditionalService.swift */; };
-		9F8948EE227315700092EF71 /* AnalyticsApplicationEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948EB227315700092EF71 /* AnalyticsApplicationEventsHandler.swift */; };
-		9F8948EF227315700092EF71 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948EC227315700092EF71 /* AnalyticsService.swift */; };
-		9F8948F4227316BF0092EF71 /* AnalyticsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948F3227316BF0092EF71 /* AnalyticsServiceProtocol.swift */; };
 		9F8948FE227357020092EF71 /* LEDAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8948FC227357020092EF71 /* LEDAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F8949062273572E0092EF71 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8949052273572E0092EF71 /* AnalyticsService.swift */; };
 		9F89490A227357450092EF71 /* AnalyticsApplicationEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894907227357450092EF71 /* AnalyticsApplicationEventsHandler.swift */; };
 		9F89490B227357450092EF71 /* AnalyticsAdditionalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894908227357450092EF71 /* AnalyticsAdditionalService.swift */; };
 		9F89490C227357450092EF71 /* AnalyticsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F894909227357450092EF71 /* AnalyticsServiceProtocol.swift */; };
-		C681F5577EC6A702D2ECE899 /* Pods_LEDAnalyticsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA948527E9ECAAB46A80335 /* Pods_LEDAnalyticsCore.framework */; };
 		E383DC7C97D4C62A4F6BE3DB /* Pods_LEDCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086C8F95CA08CD05C1DA1C1D /* Pods_LEDCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,13 +53,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9F89486C2272E2600092EF71;
 			remoteInfo = LEDCore;
-		};
-		9F8948F0227315AE0092EF71 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9F8948492272E1FC0092EF71 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F8948932272E7F30092EF71;
-			remoteInfo = LEDProductCore;
 		};
 		9F8949022273570A0092EF71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -111,13 +98,6 @@
 		9F8948AF2272E8540092EF71 /* StorageServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageServiceProtocol.swift; sourceTree = "<group>"; };
 		9F8948B02272E8550092EF71 /* UserDefaults+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Storage.swift"; sourceTree = "<group>"; };
 		9F8948DB227311810092EF71 /* SimpleKeychain+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SimpleKeychain+Storage.swift"; sourceTree = "<group>"; };
-		9F8948E2227315670092EF71 /* LEDAnalyticsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEDAnalyticsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F8948E4227315670092EF71 /* LEDAnalyticsCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEDAnalyticsCore.h; sourceTree = "<group>"; };
-		9F8948E5227315670092EF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F8948EA227315700092EF71 /* AnalyticsAdditionalService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsAdditionalService.swift; sourceTree = "<group>"; };
-		9F8948EB227315700092EF71 /* AnalyticsApplicationEventsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsApplicationEventsHandler.swift; sourceTree = "<group>"; };
-		9F8948EC227315700092EF71 /* AnalyticsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
-		9F8948F3227316BF0092EF71 /* AnalyticsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsServiceProtocol.swift; sourceTree = "<group>"; };
 		9F8948FA227357020092EF71 /* LEDAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEDAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8948FC227357020092EF71 /* LEDAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEDAnalytics.h; sourceTree = "<group>"; };
 		9F8948FD227357020092EF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,14 +140,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F8948DF227315670092EF71 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C681F5577EC6A702D2ECE899 /* Pods_LEDAnalyticsCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9F8948F7227357020092EF71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,7 +157,6 @@
 				9F8948542272E1FC0092EF71 /* LEDHelpers */,
 				9F89486E2272E2600092EF71 /* LEDCore */,
 				9F8948952272E7F30092EF71 /* LEDProductCore */,
-				9F8948E3227315670092EF71 /* LEDAnalyticsCore */,
 				9F8948FB227357020092EF71 /* LEDAnalytics */,
 				9F8948532272E1FC0092EF71 /* Products */,
 				A7F6CC40D4340C1DF3707A6C /* Pods */,
@@ -199,7 +170,6 @@
 				9F8948522272E1FC0092EF71 /* LEDHelpers.framework */,
 				9F89486D2272E2600092EF71 /* LEDCore.framework */,
 				9F8948942272E7F30092EF71 /* LEDProductCore.framework */,
-				9F8948E2227315670092EF71 /* LEDAnalyticsCore.framework */,
 				9F8948FA227357020092EF71 /* LEDAnalytics.framework */,
 			);
 			name = Products;
@@ -338,30 +308,10 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
-		9F8948E3227315670092EF71 /* LEDAnalyticsCore */ = {
-			isa = PBXGroup;
-			children = (
-				9F8948F22273169C0092EF71 /* Analytics */,
-				9F8948E4227315670092EF71 /* LEDAnalyticsCore.h */,
-				9F8948E5227315670092EF71 /* Info.plist */,
-			);
-			path = LEDAnalyticsCore;
-			sourceTree = "<group>";
-		};
-		9F8948F22273169C0092EF71 /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				9F8948EC227315700092EF71 /* AnalyticsService.swift */,
-				9F8948F3227316BF0092EF71 /* AnalyticsServiceProtocol.swift */,
-				9F8948EA227315700092EF71 /* AnalyticsAdditionalService.swift */,
-				9F8948EB227315700092EF71 /* AnalyticsApplicationEventsHandler.swift */,
-			);
-			path = Analytics;
-			sourceTree = "<group>";
-		};
 		9F8948FB227357020092EF71 /* LEDAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				9F8949052273572E0092EF71 /* AnalyticsService.swift */,
 				9F8949042273570F0092EF71 /* Classes */,
 				9F8948FC227357020092EF71 /* LEDAnalytics.h */,
 				9F8948FD227357020092EF71 /* Info.plist */,
@@ -372,7 +322,6 @@
 		9F8949042273570F0092EF71 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9F8949052273572E0092EF71 /* AnalyticsService.swift */,
 				9F894908227357450092EF71 /* AnalyticsAdditionalService.swift */,
 				9F894907227357450092EF71 /* AnalyticsApplicationEventsHandler.swift */,
 				9F894909227357450092EF71 /* AnalyticsServiceProtocol.swift */,
@@ -433,14 +382,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8948982272E7F30092EF71 /* LEDProductCore.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F8948DD227315670092EF71 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F8948E6227315670092EF71 /* LEDAnalyticsCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,26 +455,6 @@
 			productReference = 9F8948942272E7F30092EF71 /* LEDProductCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9F8948E1227315670092EF71 /* LEDAnalyticsCore */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9F8948E9227315670092EF71 /* Build configuration list for PBXNativeTarget "LEDAnalyticsCore" */;
-			buildPhases = (
-				B5C102086C51F14DD6DDBDF8 /* [CP] Check Pods Manifest.lock */,
-				9F8948DD227315670092EF71 /* Headers */,
-				9F8948DE227315670092EF71 /* Sources */,
-				9F8948DF227315670092EF71 /* Frameworks */,
-				9F8948E0227315670092EF71 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9F8948F1227315AE0092EF71 /* PBXTargetDependency */,
-			);
-			name = LEDAnalyticsCore;
-			productName = LEDAnalyticsCore;
-			productReference = 9F8948E2227315670092EF71 /* LEDAnalyticsCore.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		9F8948F9227357020092EF71 /* LEDAnalytics */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F8948FF227357020092EF71 /* Build configuration list for PBXNativeTarget "LEDAnalytics" */;
@@ -575,9 +496,6 @@
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
 					};
-					9F8948E1227315670092EF71 = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
 					9F8948F9227357020092EF71 = {
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
@@ -599,7 +517,6 @@
 				9F8948512272E1FC0092EF71 /* LEDHelpers */,
 				9F89486C2272E2600092EF71 /* LEDCore */,
 				9F8948932272E7F30092EF71 /* LEDProductCore */,
-				9F8948E1227315670092EF71 /* LEDAnalyticsCore */,
 				9F8948F9227357020092EF71 /* LEDAnalytics */,
 			);
 		};
@@ -621,13 +538,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9F8948922272E7F30092EF71 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F8948E0227315670092EF71 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -710,28 +620,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B5C102086C51F14DD6DDBDF8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LEDAnalyticsCore-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C07B9F602D582A6160001F23 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -796,17 +684,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F8948DE227315670092EF71 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F8948F4227316BF0092EF71 /* AnalyticsServiceProtocol.swift in Sources */,
-				9F8948ED227315700092EF71 /* AnalyticsAdditionalService.swift in Sources */,
-				9F8948EE227315700092EF71 /* AnalyticsApplicationEventsHandler.swift in Sources */,
-				9F8948EF227315700092EF71 /* AnalyticsService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9F8948F6227357020092EF71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -830,11 +707,6 @@
 			isa = PBXTargetDependency;
 			target = 9F89486C2272E2600092EF71 /* LEDCore */;
 			targetProxy = 9F8948AC2272E82E0092EF71 /* PBXContainerItemProxy */;
-		};
-		9F8948F1227315AE0092EF71 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9F8948932272E7F30092EF71 /* LEDProductCore */;
-			targetProxy = 9F8948F0227315AE0092EF71 /* PBXContainerItemProxy */;
 		};
 		9F8949032273570A0092EF71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1134,60 +1006,6 @@
 			};
 			name = Release;
 		};
-		9F8948E7227315670092EF71 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 896A2AD69C07B268DC368D07 /* Pods-LEDAnalyticsCore.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5MGEMLZRS4;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LEDAnalyticsCore/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.led.frameworks.LEDAnalyticsCore;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9F8948E8227315670092EF71 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC9B9C76BB153AFEEF00EFE3 /* Pods-LEDAnalyticsCore.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5MGEMLZRS4;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LEDAnalyticsCore/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.led.frameworks.LEDAnalyticsCore;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		9F894900227357020092EF71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B30FDEF3777817310E479B0E /* Pods-LEDAnalytics.debug.xcconfig */;
@@ -1280,15 +1098,6 @@
 			buildConfigurations = (
 				9F8948992272E7F30092EF71 /* Debug */,
 				9F89489A2272E7F30092EF71 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9F8948E9227315670092EF71 /* Build configuration list for PBXNativeTarget "LEDAnalyticsCore" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9F8948E7227315670092EF71 /* Debug */,
-				9F8948E8227315670092EF71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
