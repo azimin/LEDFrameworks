@@ -36,3 +36,10 @@ target 'LEDProductCore' do
   use_frameworks!
 
 end
+
+target 'LEDDependencies' do
+  use_frameworks!
+
+  pod 'RealmSwift'
+
+end
