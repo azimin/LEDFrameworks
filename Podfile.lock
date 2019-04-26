@@ -1,0 +1,16 @@
+PODS:
+  - SimpleKeychain (0.9.0)
+
+DEPENDENCIES:
+  - SimpleKeychain
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SimpleKeychain
+
+SPEC CHECKSUMS:
+  SimpleKeychain: 3be49072fd2d82de8fa83d847ef1e548622f8fc5
+
+PODFILE CHECKSUM: 745859e2c33dc82d9c0c765ee49a83252ddaabc5
+
+COCOAPODS: 1.6.1

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0955E47F4F148D757B6F9F /* Pods_LEDProductCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D38126241329A452257290 /* Pods_LEDProductCore.framework */; };
+		764C7857E38A81350EE58188 /* Pods_LEDHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A510242C78D3635D914B23F4 /* Pods_LEDHelpers.framework */; };
 		9F8948572272E1FC0092EF71 /* LEDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8948552272E1FC0092EF71 /* LEDHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F8948712272E2600092EF71 /* LEDCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F89486F2272E2600092EF71 /* LEDCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F8948772272E27A0092EF71 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948762272E27A0092EF71 /* Core.swift */; };
@@ -27,6 +29,8 @@
 		9F8948AB2272E8240092EF71 /* ProductCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948AA2272E8240092EF71 /* ProductCore.swift */; };
 		9F8948B12272E8550092EF71 /* StorageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948AF2272E8540092EF71 /* StorageServiceProtocol.swift */; };
 		9F8948B22272E8550092EF71 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948B02272E8550092EF71 /* UserDefaults+Storage.swift */; };
+		9F8948DC227311810092EF71 /* SimpleKeychain+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8948DB227311810092EF71 /* SimpleKeychain+Storage.swift */; };
+		E383DC7C97D4C62A4F6BE3DB /* Pods_LEDCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086C8F95CA08CD05C1DA1C1D /* Pods_LEDCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		086C8F95CA08CD05C1DA1C1D /* Pods_LEDCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LEDCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08AE8CAF8503131985CE9882 /* Pods-LEDHelpers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDHelpers.debug.xcconfig"; path = "Target Support Files/Pods-LEDHelpers/Pods-LEDHelpers.debug.xcconfig"; sourceTree = "<group>"; };
+		20E48B638987CB89B52D15F0 /* Pods-LEDHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDHelpers.release.xcconfig"; path = "Target Support Files/Pods-LEDHelpers/Pods-LEDHelpers.release.xcconfig"; sourceTree = "<group>"; };
+		2F5DD25763A7E30C92DC2BE0 /* Pods-LEDProductCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDProductCore.release.xcconfig"; path = "Target Support Files/Pods-LEDProductCore/Pods-LEDProductCore.release.xcconfig"; sourceTree = "<group>"; };
+		3CB715580F28583FA84EBC64 /* Pods-LEDCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDCore.debug.xcconfig"; path = "Target Support Files/Pods-LEDCore/Pods-LEDCore.debug.xcconfig"; sourceTree = "<group>"; };
+		9F5E85848EAF5CFF56ACD2BB /* Pods-LEDProductCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDProductCore.debug.xcconfig"; path = "Target Support Files/Pods-LEDProductCore/Pods-LEDProductCore.debug.xcconfig"; sourceTree = "<group>"; };
 		9F8948522272E1FC0092EF71 /* LEDHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEDHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8948552272E1FC0092EF71 /* LEDHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEDHelpers.h; sourceTree = "<group>"; };
 		9F8948562272E1FC0092EF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +83,10 @@
 		9F8948AA2272E8240092EF71 /* ProductCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCore.swift; sourceTree = "<group>"; };
 		9F8948AF2272E8540092EF71 /* StorageServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageServiceProtocol.swift; sourceTree = "<group>"; };
 		9F8948B02272E8550092EF71 /* UserDefaults+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Storage.swift"; sourceTree = "<group>"; };
+		9F8948DB227311810092EF71 /* SimpleKeychain+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SimpleKeychain+Storage.swift"; sourceTree = "<group>"; };
+		A510242C78D3635D914B23F4 /* Pods_LEDHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LEDHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1D38126241329A452257290 /* Pods_LEDProductCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LEDProductCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F92D0B7E0D4F3346EDEDEEE0 /* Pods-LEDCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEDCore.release.xcconfig"; path = "Target Support Files/Pods-LEDCore/Pods-LEDCore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				764C7857E38A81350EE58188 /* Pods_LEDHelpers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E383DC7C97D4C62A4F6BE3DB /* Pods_LEDCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0955E47F4F148D757B6F9F /* Pods_LEDProductCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +124,8 @@
 				9F89486E2272E2600092EF71 /* LEDCore */,
 				9F8948952272E7F30092EF71 /* LEDProductCore */,
 				9F8948532272E1FC0092EF71 /* Products */,
+				A7F6CC40D4340C1DF3707A6C /* Pods */,
+				A6A762D7B17F8865AC04C2D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,10 +265,35 @@
 		9F8948AE2272E8490092EF71 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				9F8948DB227311810092EF71 /* SimpleKeychain+Storage.swift */,
 				9F8948AF2272E8540092EF71 /* StorageServiceProtocol.swift */,
 				9F8948B02272E8550092EF71 /* UserDefaults+Storage.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		A6A762D7B17F8865AC04C2D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				086C8F95CA08CD05C1DA1C1D /* Pods_LEDCore.framework */,
+				A510242C78D3635D914B23F4 /* Pods_LEDHelpers.framework */,
+				D1D38126241329A452257290 /* Pods_LEDProductCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7F6CC40D4340C1DF3707A6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CB715580F28583FA84EBC64 /* Pods-LEDCore.debug.xcconfig */,
+				F92D0B7E0D4F3346EDEDEEE0 /* Pods-LEDCore.release.xcconfig */,
+				08AE8CAF8503131985CE9882 /* Pods-LEDHelpers.debug.xcconfig */,
+				20E48B638987CB89B52D15F0 /* Pods-LEDHelpers.release.xcconfig */,
+				9F5E85848EAF5CFF56ACD2BB /* Pods-LEDProductCore.debug.xcconfig */,
+				2F5DD25763A7E30C92DC2BE0 /* Pods-LEDProductCore.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +330,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F89485A2272E1FC0092EF71 /* Build configuration list for PBXNativeTarget "LEDHelpers" */;
 			buildPhases = (
+				6C6B5C4D279A815EE2A96791 /* [CP] Check Pods Manifest.lock */,
 				9F89484D2272E1FC0092EF71 /* Headers */,
 				9F89484E2272E1FC0092EF71 /* Sources */,
 				9F89484F2272E1FC0092EF71 /* Frameworks */,
@@ -304,6 +349,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F8948722272E2600092EF71 /* Build configuration list for PBXNativeTarget "LEDCore" */;
 			buildPhases = (
+				C07B9F602D582A6160001F23 /* [CP] Check Pods Manifest.lock */,
 				9F8948682272E2600092EF71 /* Headers */,
 				9F8948692272E2600092EF71 /* Sources */,
 				9F89486A2272E2600092EF71 /* Frameworks */,
@@ -323,6 +369,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F89489B2272E7F30092EF71 /* Build configuration list for PBXNativeTarget "LEDProductCore" */;
 			buildPhases = (
+				2C66CD5D9833DF8B80D15E63 /* [CP] Check Pods Manifest.lock */,
 				9F89488F2272E7F30092EF71 /* Headers */,
 				9F8948902272E7F30092EF71 /* Sources */,
 				9F8948912272E7F30092EF71 /* Frameworks */,
@@ -404,6 +451,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C66CD5D9833DF8B80D15E63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LEDProductCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C6B5C4D279A815EE2A96791 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LEDHelpers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C07B9F602D582A6160001F23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LEDCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F89484E2272E1FC0092EF71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -427,6 +543,7 @@
 				9F8948812272E2A40092EF71 /* TimeTravelDataSourceProtocol.swift in Sources */,
 				9F89487A2272E28E0092EF71 /* AppLauncher.swift in Sources */,
 				9F8948B12272E8550092EF71 /* StorageServiceProtocol.swift in Sources */,
+				9F8948DC227311810092EF71 /* SimpleKeychain+Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +700,7 @@
 		};
 		9F89485B2272E1FC0092EF71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08AE8CAF8503131985CE9882 /* Pods-LEDHelpers.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -611,6 +729,7 @@
 		};
 		9F89485C2272E1FC0092EF71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E48B638987CB89B52D15F0 /* Pods-LEDHelpers.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -638,6 +757,7 @@
 		};
 		9F8948732272E2600092EF71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB715580F28583FA84EBC64 /* Pods-LEDCore.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -664,6 +784,7 @@
 		};
 		9F8948742272E2600092EF71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F92D0B7E0D4F3346EDEDEEE0 /* Pods-LEDCore.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -690,6 +811,7 @@
 		};
 		9F8948992272E7F30092EF71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F5E85848EAF5CFF56ACD2BB /* Pods-LEDProductCore.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -717,6 +839,7 @@
 		};
 		9F89489A2272E7F30092EF71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F5DD25763A7E30C92DC2BE0 /* Pods-LEDProductCore.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
