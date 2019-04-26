@@ -11,14 +11,14 @@ target 'LEDCore' do
 
 end
 
-target 'LEDAnalyticsCore' do
+target 'LEDAnalytics' do
   use_frameworks!
   pod 'FacebookCore'
   pod 'Amplitude-iOS'
 
 end
 
-target 'LEDAnalytics' do
+target 'LEDStatistics' do
   use_frameworks!
   pod 'FacebookCore'
   pod 'Amplitude-iOS'
