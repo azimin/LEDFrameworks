@@ -15,9 +15,7 @@ import LEDProductCore
 import StoreKit
 import AdSupport
 
-public extension AnalyticsService: ProductAnalyticsServiceProtocol { }
-
-public class AnalyticsService: AnalyticsServiceProtocol {
+public class AnalyticsService: AnalyticsServiceProtocol, ProductAnalyticsServiceProtocol {
     private var storage: StorageServiceProtocol
     private var apmplitudeId: String?
     private var hasFacebook: Bool

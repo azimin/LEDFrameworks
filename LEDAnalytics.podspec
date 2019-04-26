@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LEDAnalytics"
-  s.version      = "0.23"
+  s.version      = "0.24"
   s.summary      = "Frameworks that helps you to build awasome projects."
   s.description  = <<-DESC
                     With this framework can fastly build MVP projects with all nessesary product code.
@@ -20,5 +20,4 @@ Pod::Spec.new do |s|
   s.dependency 'LEDProductCore'
   s.dependency 'FacebookCore'
   s.dependency 'Amplitude-iOS'
-  s.dependency 'SimpleKeychain'
 end
