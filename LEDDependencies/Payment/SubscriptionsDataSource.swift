@@ -14,7 +14,7 @@ import LEDPayment
 
 public class SubscriptionsDataSource<Product, PurchaseHandler: PurchaseHandlerProtocol>: SubscriptionsDataSourceProtocol where PurchaseHandler.Product == Product {
 
-    private let analyticsService: AnalyticsService
+    private let analyticsService: AnalyticsServiceProtocol
     private let userMonitor: UserMonitorService
     private var purchasesService: PurchasesService<Product, PurchaseHandler>?
 

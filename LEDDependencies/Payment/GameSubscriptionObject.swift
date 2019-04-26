@@ -88,7 +88,7 @@ public final class GameSubscriptionObject: Object {
         }
     }
 
-    public func logItemIfNeeded(analyticsService: AnalyticsService, userMonitor: UserMonitorService) {
+    public func logItemIfNeeded(analyticsService: AnalyticsServiceProtocol, userMonitor: UserMonitorService) {
         if !self.isSentWithPrice && self.currency != nil {
             self.logItem(analyticsService: analyticsService, userMonitor: userMonitor)
         } else if !self.isSentWithoutPrice {
@@ -96,7 +96,7 @@ public final class GameSubscriptionObject: Object {
         }
     }
 
-    private func logItem(analyticsService: AnalyticsService, userMonitor: UserMonitorService) {
+    private func logItem(analyticsService: AnalyticsServiceProtocol, userMonitor: UserMonitorService) {
         let originalTransactionId = self.originalTransactionId
         let transactionId = self.transactionId
         let subscriptionExpirationDate = self.experiningDate ?? Date()
