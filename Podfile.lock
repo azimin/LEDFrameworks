@@ -1,23 +1,20 @@
 PODS:
   - Amplitude-iOS (4.6.0)
-  - Bolts (1.9.0):
-    - Bolts/AppLinks (= 1.9.0)
-    - Bolts/Tasks (= 1.9.0)
-  - Bolts/AppLinks (1.9.0):
-    - Bolts/Tasks
-  - Bolts/Tasks (1.9.0)
-  - FacebookCore (0.6.0):
-    - Bolts (~> 1.9)
-    - FBSDKCoreKit (~> 4.43)
-  - FBSDKCoreKit (4.44.1):
-    - Bolts (~> 1.9)
+  - FacebookCore (0.7.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKCoreKit (5.0.0):
+    - FBSDKCoreKit/Basics (= 5.0.0)
+    - FBSDKCoreKit/Core (= 5.0.0)
+  - FBSDKCoreKit/Basics (5.0.0)
+  - FBSDKCoreKit/Core (5.0.0):
+    - FBSDKCoreKit/Basics
   - Realm (3.14.2):
     - Realm/Headers (= 3.14.2)
   - Realm/Headers (3.14.2)
   - RealmSwift (3.14.2):
     - Realm (= 3.14.2)
   - SimpleKeychain (0.9.0)
-  - SwiftyStoreKit (0.14.2)
+  - SwiftyStoreKit (0.15.0)
 
 DEPENDENCIES:
   - Amplitude-iOS
@@ -29,7 +26,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Amplitude-iOS
-    - Bolts
     - FacebookCore
     - FBSDKCoreKit
     - Realm
@@ -39,13 +35,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Amplitude-iOS: ac1715ae68104b7a51723209ad574f60ab22ae5f
-  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  FacebookCore: 38cd3a4078738d6f648eb9b6b9d35b02d693e9a1
-  FBSDKCoreKit: a823ae35bdb60ebb8d7a7e51abe7c5d87d2bfced
+  FacebookCore: 4eee98476cb37a485af5d337eb21f8cd5b3c7e6c
+  FBSDKCoreKit: ba361d4a9d4dc29ff218822b849b22d4f869c7bb
   Realm: 179c6706e3a49dbfe112e572fd3c03d3169bea35
   RealmSwift: 1797f272fb51c555b764fada32e82159a2c65247
   SimpleKeychain: 3be49072fd2d82de8fa83d847ef1e548622f8fc5
-  SwiftyStoreKit: cc399645796b094022fb650c148a0aed25995873
+  SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
 
 PODFILE CHECKSUM: 5a86dedfa39542b5261e21343ff727036bafff8b
 

@@ -36,8 +36,8 @@ public class AnalyticsService: AnalyticsServiceProtocol, ProductAnalyticsService
         }
 
         if hasFacebook {
-            FBSDKAppEvents.activateApp()
-            FBSDKAppEvents.setUserID(self.userId)
+            AppEvents.activateApp()
+            AppEvents.userID = self.userId
         }
 
         self.additionalServices.forEach({ $0.setup(id: self.userId) })
@@ -71,10 +71,10 @@ public class AnalyticsService: AnalyticsServiceProtocol, ProductAnalyticsService
     public func logEvent(name: String, properties: [AnyHashable: Any]? = nil) {
         if let properties = properties {
             Amplitude.instance().logEvent(name, withEventProperties: properties)
-            AppEventsLogger.log(AppEvent(name: name, parameters: self.convertToFB(properties: properties), valueToSum: nil))
+            AppEvents.logEvent(AppEvents.Name(rawValue: name), parameters:  self.convertToFB(properties: properties))
         } else {
             Amplitude.instance().logEvent(name)
-            AppEventsLogger.log(AppEvent(name: name))
+            AppEvents.logEvent(AppEvents.Name(rawValue: name))
         }
         self.additionalServices.forEach({ $0.logEvent(name: name, properties: properties) })
     }
@@ -100,7 +100,7 @@ public class AnalyticsService: AnalyticsServiceProtocol, ProductAnalyticsService
     public func setPersonProperty(name: String, value: NSObject) {
         let identify = AMPIdentify().set(name, value: value)
         Amplitude.instance().identify(identify)
-        AppEventsLogger.updateUserProperties([name: value], completion: { (_, _) in })
+        AppEvents.updateUserProperties([name: value]) { (_, _, _) in }
         self.additionalServices.forEach({ $0.setPersonProperty(name: name, value: value) })
     }
 
@@ -111,7 +111,7 @@ public class AnalyticsService: AnalyticsServiceProtocol, ProductAnalyticsService
         let udKey = self.storageUserPropertiesKey(with: name)
         if (self.storage.getObject(for: udKey) as Bool?) == nil {
             // FIXME: - Rething logic if completion would be false
-            AppEventsLogger.updateUserProperties([name: value], completion: { (_, _) in })
+            AppEvents.updateUserProperties([name: value]) { (_, _, _) in }
             self.additionalServices.forEach({ $0.setPersonProperty(name: name, value: value) })
             self.storage.save(object: true, for: udKey)
 
@@ -129,7 +129,7 @@ public class AnalyticsService: AnalyticsServiceProtocol, ProductAnalyticsService
         var newValue: Int = storedValue ?? 0
         newValue += value
         self.storage.save(object: newValue, for: udKey)
-        AppEventsLogger.updateUserProperties([name: newValue], completion: { (_, _) in })
+        AppEvents.updateUserProperties([name: newValue]) { (_, _, _) in }
         self.additionalServices.forEach({ $0.setPersonProperty(name: name, value: "\(value)" as NSObject) })
     }
 
@@ -151,12 +151,12 @@ public class AnalyticsService: AnalyticsServiceProtocol, ProductAnalyticsService
 
     // MARK: - Helpers
 
-    private func convertToFB(properties: [AnyHashable: Any]) -> AppEvent.ParametersDictionary {
-        var parametrs: AppEvent.ParametersDictionary = [:]
+    private func convertToFB(properties: [AnyHashable: Any]) -> [String: Any] {
+        var parametrs: [String: Any] = [:]
         for (key, value) in properties {
             if let key = key as? String,
-                let value = value as? AppEventParameterValueType {
-                parametrs[.custom(key)] = value
+                let value = value as? [String: Any] {
+                parametrs[key] = value
             }
         }
         return parametrs
