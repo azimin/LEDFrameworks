@@ -13,7 +13,6 @@ import FBSDKCoreKit
 import LEDCore
 import LEDProductCore
 import StoreKit
-import AdSupport
 
 public class AnalyticsService: AnalyticsServiceProtocol, ProductAnalyticsServiceProtocol {
     private var storage: StorageServiceProtocol
@@ -42,10 +41,10 @@ public class AnalyticsService: AnalyticsServiceProtocol, ProductAnalyticsService
 
         self.additionalServices.forEach({ $0.setup(id: self.userId) })
 
-        if shouldTrackAdIdentifier, ASIdentifierManager.shared().isAdvertisingTrackingEnabled {
-            let adIdentifier = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-            self.setPersonProperty(name: "ad_id", value: adIdentifier as NSObject)
-        }
+//        if shouldTrackAdIdentifier, ASIdentifierManager.shared().isAdvertisingTrackingEnabled {
+//            let adIdentifier = ASIdentifierManager.shared().advertisingIdentifier.uuidString
+//            self.setPersonProperty(name: "ad_id", value: adIdentifier as NSObject)
+//        }
     }
 
     public var userId: String {
