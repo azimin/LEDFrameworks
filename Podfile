@@ -13,7 +13,7 @@ end
 
 target 'LEDAnalytics' do
   use_frameworks!
-  pod 'FacebookCore'
+  pod 'FacebookCore', '0.6'
   pod 'Amplitude-iOS'
 
 end
