@@ -1,35 +1,31 @@
 PODS:
-  - Amplitude-iOS (4.6.0)
-  - Bolts (1.9.0):
-    - Bolts/AppLinks (= 1.9.0)
-    - Bolts/Tasks (= 1.9.0)
-  - Bolts/AppLinks (1.9.0):
-    - Bolts/Tasks
-  - Bolts/Tasks (1.9.0)
-  - FacebookCore (0.6.0):
-    - Bolts (~> 1.9)
-    - FBSDKCoreKit (~> 4.43)
-  - FBSDKCoreKit (4.44.1):
-    - Bolts (~> 1.9)
-  - Realm (3.15.0):
-    - Realm/Headers (= 3.15.0)
-  - Realm/Headers (3.15.0)
-  - RealmSwift (3.15.0):
-    - Realm (= 3.15.0)
+  - Amplitude-iOS (4.8.1)
+  - FacebookCore (0.9.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKCoreKit (5.7.0):
+    - FBSDKCoreKit/Basics (= 5.7.0)
+    - FBSDKCoreKit/Core (= 5.7.0)
+  - FBSDKCoreKit/Basics (5.7.0)
+  - FBSDKCoreKit/Core (5.7.0):
+    - FBSDKCoreKit/Basics
+  - Realm (3.19.0):
+    - Realm/Headers (= 3.19.0)
+  - Realm/Headers (3.19.0)
+  - RealmSwift (3.19.0):
+    - Realm (= 3.19.0)
   - SimpleKeychain (0.9.0)
   - SwiftyStoreKit (0.15.0)
 
 DEPENDENCIES:
   - Amplitude-iOS
-  - FacebookCore (= 0.6)
+  - FacebookCore
   - RealmSwift
   - SimpleKeychain
   - SwiftyStoreKit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Amplitude-iOS
-    - Bolts
     - FacebookCore
     - FBSDKCoreKit
     - Realm
@@ -38,15 +34,14 @@ SPEC REPOS:
     - SwiftyStoreKit
 
 SPEC CHECKSUMS:
-  Amplitude-iOS: ac1715ae68104b7a51723209ad574f60ab22ae5f
-  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  FacebookCore: 38cd3a4078738d6f648eb9b6b9d35b02d693e9a1
-  FBSDKCoreKit: a823ae35bdb60ebb8d7a7e51abe7c5d87d2bfced
-  Realm: 9b834e1be6062f544805252c812348872dc5d4ed
-  RealmSwift: 8a41886f8ab6efef9eb8df97de2f2bb911561a79
+  Amplitude-iOS: 6e2a21000b89aaa428a45cd22e56caed5e2360bf
+  FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
+  FBSDKCoreKit: 0d2d450fe9447e204fa6e912e0df76dd36693699
+  Realm: 995d585bcf699aaff226715886c849a29dd3d07f
+  RealmSwift: 35f284a537989f2187b413e5917091948cb87a3f
   SimpleKeychain: 3be49072fd2d82de8fa83d847ef1e548622f8fc5
   SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
 
-PODFILE CHECKSUM: 5544d39ea6e697da10a1e3217ac044bf6885e077
+PODFILE CHECKSUM: 5a86dedfa39542b5261e21343ff727036bafff8b
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.1

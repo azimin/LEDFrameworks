@@ -14,23 +14,23 @@ public class AnalyticsApplicationEventsHandler {
     private(set) public static var shared: AnalyticsApplicationEventsHandler = AnalyticsApplicationEventsHandler()
 
     public func activateApp() {
-        FBSDKAppEvents.activateApp()
+        AppEvents.activateApp()
     }
 
     public typealias DeferredAppLinkHandler = (_ url: URL?, _ error: Error?) -> Void
     public func fetchDeferredFacebookAppLink(_ handler: @escaping DeferredAppLinkHandler) {
-        FBSDKAppLinkUtility.fetchDeferredAppLink(handler)
+        AppLinkUtility.fetchDeferredAppLink(handler)
     }
 
     public func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        return ApplicationDelegate.shared.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
     }
 
     public func logFacebookNotificationOpen(userInfo: [AnyHashable : Any]) {
-        FBSDKAppEvents.logPushNotificationOpen(userInfo)
+        AppEvents.logPushNotificationOpen(userInfo)
     }
 
     public func setFacebookPushNotifications(deviceToken: Data) {
-        FBSDKAppEvents.setPushNotificationsDeviceToken(deviceToken)
+        AppEvents.setPushNotificationsDeviceToken(deviceToken)
     }
 }
