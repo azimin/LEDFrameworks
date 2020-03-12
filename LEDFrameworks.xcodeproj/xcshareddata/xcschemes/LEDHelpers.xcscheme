@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1130"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9F89491222735DD60092EF71"
-               BuildableName = "LEDStatistics.framework"
-               BlueprintName = "LEDStatistics"
+               BlueprintIdentifier = "9F8948512272E1FC0092EF71"
+               BuildableName = "LEDHelpers.framework"
+               BlueprintName = "LEDHelpers"
                ReferencedContainer = "container:LEDFrameworks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,15 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9F89491222735DD60092EF71"
-            BuildableName = "LEDStatistics.framework"
-            BlueprintName = "LEDStatistics"
-            ReferencedContainer = "container:LEDFrameworks.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -59,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9F89491222735DD60092EF71"
-            BuildableName = "LEDStatistics.framework"
-            BlueprintName = "LEDStatistics"
+            BlueprintIdentifier = "9F8948512272E1FC0092EF71"
+            BuildableName = "LEDHelpers.framework"
+            BlueprintName = "LEDHelpers"
             ReferencedContainer = "container:LEDFrameworks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
